@@ -28,6 +28,7 @@ header {
 
 .title, .subtitle {
     font-family: monospace;
+    color: rgb(116, 14, 14);
 }
 
 .title-subtitle {
