@@ -89,7 +89,15 @@ header nav a {
 .subtitle-our-services {
     display: flex;
     justify-content: center;
+    font-family: monospace;
 }
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -113,6 +121,8 @@ header nav a {
     margin: 20px;
     font-size: 14px;
     border-radius: 5%;
+    align-items: center;
+    justify-content: center;
 }
 
 .arabic {
@@ -135,4 +145,69 @@ header nav a {
 
 .other {
     background-image: url(images/other.jpg);
+}
+
+/* Our Team styles */
+.subtitle-our-team {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.our-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    align-items: center;
+    margin: 30px;
+    /* NOTE: I could certainly use some assistance with the flex-grow/shrink options */
+}
+
+.team-image {
+    width: 100%;
+    height: auto;
+}
+
+.team-box h3, h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+#contact-us {
+    font-family: monospace;
+    text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 847px) {
+    .gibbon {
+        display: none;
+    }
+}
+
+@media (max-width: 564px) {
+    .team-box h4 {
+        display: none;
+    }
 }
